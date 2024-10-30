@@ -1,0 +1,7 @@
+Circuit Overview and Main Components
+1.	Arduino Uno: The main control unit of the system, responsible for receiving time information from the RTC and controlling the relay to turn the water pump on and off according to a set schedule.
+2.	RTC (Real-Time Clock) - PCF8563: This component provides real-time tracking, allowing the Arduino to follow a programmed schedule. The RTC ensures that the irrigation system activates the water pump at specific times of the day, making the system more autonomous and precise.
+3.	Relay Module: The relay functions as an electronic switch, controlled by the Arduino. When the programmed time is reached, the Arduino activates the relay to turn on the water pump.
+4.	Water Pump: Connected to the relay, the pump supplies water to the plants. It operates on a timed schedule managed by the RTC and Arduino, ensuring consistent irrigation.
+5.	EEPROM - AT24C256: Used for non-volatile storage, allowing the system to save irrigation schedules and settings even if the power is turned off. This ensures that schedules are maintained without needing reprogramming after a reset.
+6.	Power Supply: Powers the circuit, including the Arduino, RTC module, and pump.
